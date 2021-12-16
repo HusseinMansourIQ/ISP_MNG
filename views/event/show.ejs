@@ -1,0 +1,34 @@
+
+<%- include('../partials/header.ejs') -%>
+<%- include('../partials/navbar.ejs') -%>
+<div class="container">
+<div class="row mt-4">
+        
+    <div class="col-md-9 offset-md-1">
+        <div class="card">
+<form action="/events/sub" method="post" >
+            <div class="card-body">
+                <h5 class="card-title" value="<%=user.user_name%>" id="user_nameD" name="user_nameD"><%=user.user_name%></h5>
+                <input type="text" value="<%=user.user_name%>" id="user_name" name="user_name" style="display: none"></input>
+                <hr>
+                <p class="card-text" id="userEnameD" name="userEnameD" ><%=user.userEname%></p>
+                <input type="text" id="userEname" name="userEname" value="<%=user.userEname%>" style="display: none"></input>
+                <input type="text" value="<%=user.user_deb%>" name="left_deb" id="left_deb"></input>
+                <input type="text" placeholder="القيمة المسددة" name="am_paid" id="am_paid"></input>
+                <input type="text" placeholder="ملاحضات التسديد" name="note" id="note"></input>
+                    <a href="#" class="btn btn-secondary">Edit</a>
+                <input type="text" value="<%=user._id%>" id="user_id" name="user_id" style="display: none"></input>
+
+                <input type="submit" class="btn btn-primary"id="submit"></input>
+
+            </div>
+        </div>
+        </div>
+    </form>
+    </div>
+
+</div>
+
+</div>
+
+<%- include('../partials/footer.ejs') -%>

@@ -1,0 +1,62 @@
+<%- include('../partials/header') -%>
+<%- include('../partials/navbar') -%>
+<div class="container">
+  
+    <div class="row mt-3">
+<div class="col md-12">
+    <%- include('../partials/flashMessages') -%>
+</div>      
+    
+    </div>
+
+
+    <table class="table mydatatable table-hover " style="margin-top: 20px;">
+
+        <tbody>
+        <tr>
+            <td class="">NO</td>
+            <td>USER_NAME</td>
+            <td>USER DISPLAY NAME</td>
+            <td>USER DEB</td>
+            <td>USER NOTE</td>
+            <td>EDIT</td>
+            <td>DELETE</td>
+        </tr>
+        <% users.forEach((users)=> {%>
+
+        <tr>
+            <td class="">1</td>
+
+            <td> <a href="<%=  '/events/show/'  + users.id %>" style="text-decoration: unset;color: black;"><%=users.userEname%></a></td>
+            <td><%=users.user_name%></td>
+            <td><%=users.user_deb%></td>
+            <td><%=users.user_note%></td>
+            <td><button class="btn btn-primary" style="padding: 0 0 0 0 !important
+      ;margin: -2.5px auto -2px auto !important;">Edit</button></td>
+            <td><button class="btn btn-danger"  style="padding: 0 0 0 0 !important
+     ;margin: -2.5px auto -2px auto !important;">Delete</button></td>
+
+
+        </tr>
+        <%})%>
+
+        </tbody>
+    </table>
+
+
+    <div class="row">
+  <div class="col-12 mt-2 mb-4">
+    <nav aria-label="...">
+      <ul class="pagination pagination-lg justify-content-center">
+
+        
+
+
+      </ul>
+    </nav>
+  </div>
+</div>
+</div>
+
+
+<%- include('../partials/footer') -%>

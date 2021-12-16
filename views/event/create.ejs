@@ -1,0 +1,42 @@
+<%- include('../partials/header') -%>
+<%- include('../partials/navbar') -%>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-9 offset-md-3">
+            <h1 class="display-4">Add New User:</h1>
+            <hr>
+       
+            <%- include('../partials/flashMessages') -%>      
+            <form  action="/events/create" method="post">
+                <div class="form-group">
+                    <label for="title">User Name</label>
+                    <input type="text" name="userEname" id="userEname" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="title">User display name</label>
+                    <input type="text" name="user_name" id="user_name" class="form-control">
+                </div>
+
+                    <div class="form-group">
+                            <label for="location">user debits</label>
+                            <input type="text" name="user_deb" id="user_deb" class="form-control">
+                        </div>
+
+                <div class="form-group">
+                    <label for="location">user note</label>
+                    <input type="text" name="user_note" id="user_note" class="form-control">
+                </div>
+
+
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary"> Create</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
+<%- include('../partials/footer') -%>
