@@ -8,18 +8,29 @@
         <div class="card">
 <form action="/events/sub" method="post" >
             <div class="card-body">
+
                 <h5 class="card-title" value="<%=user.user_name%>" id="user_nameD" name="user_nameD"><%=user.user_name%></h5>
                 <input type="text" value="<%=user.user_name%>" id="user_name" name="user_name" style="display: none"></input>
                 <hr>
                 <p class="card-text" id="userEnameD" name="userEnameD" ><%=user.userEname%></p>
                 <input type="text" id="userEname" name="userEname" value="<%=user.userEname%>" style="display: none"></input>
-                <input type="text" value="<%=user.user_deb%>" name="left_deb" id="left_deb"></input>
-                <input type="text" placeholder="القيمة المسددة" name="am_paid" id="am_paid"></input>
-                <input type="text" placeholder="ملاحضات التسديد" name="note" id="note"></input>
-                    <a href="#" class="btn btn-secondary">Edit</a>
-                <input type="text" value="<%=user._id%>" id="user_id" name="user_id" style="display: none"></input>
+                <input type="text" class="form-control" value="<%=user.user_deb%>" name="left_deb" id="left_deb"></input>
 
-                <input type="submit" class="btn btn-primary"id="submit"></input>
+                <input type="text" class="form-control" value="<%=user.user_deb%>" name="left_deb_check" id="left_deb_check" style="display: none"></input>
+                <hr>
+                <input type="text" class="form-control" placeholder="القيمة المسددة" name="am_paid" id="am_paid"></input>
+                <hr>
+                <input type="text" class="form-control" placeholder="ملاحضات التسديد" name="note" id="note"></input>
+                <p  class="form-control" placeholder="ملاحضات التسديد" name="am_type" id="am_type" style="display: none"></p>
+
+                <hr>
+                    <a href="#" class="btn btn-secondary">Edit</a>
+                <input type="text" class="form-control" value="<%=user._id%>" id="user_id" name="user_id" style="display: none"></input>
+
+                <button  type="submit"  class="btn btn-primary"id="submit">submit</button>
+
+
+
 
             </div>
         </div>
@@ -30,5 +41,28 @@
 </div>
 
 </div>
+<script>
+    function check(){
+        var before = document.getElementById("left_deb_check").value
+        var after = document.getElementById("left_deb").value
+        if (parseInt(before)>parseInt(after)){
+            document.getElementById("am_type").innerHTML = "تسديد"
+console.log(after,before)
+        }
+        if (parseInt(after)>parseInt (before)){
+            document.getElementById("am_type").innerHTML="اظافة"
+            console.log(after,before)
+
+        }
+
+    }
+    </script>
+
 
 <%- include('../partials/footer.ejs') -%>
+<!-- refrenc -->
+<!-- leftdeb check لفحص القيمة الخاصة بالدين اذا اكبر سيتم اعتبارها فاتورة اضافة واذا اصغر سيتم اعتبارها فاتورة تسديد  -->
+<!-- ال id اللذي ينتهي بحرف d هو التيكست الخاص بالعرض  -->
+<!-- and always remember D stand for dick  -->
+<!-- am_type لنوع الفاتورة  -->
+

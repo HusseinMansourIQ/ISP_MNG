@@ -55,7 +55,7 @@ router.post('/create', [
         res.redirect('/events/create')
     } else {
         
-        let newEvent = new Event({
+        let newEvent = new User_E({
             userEname: req.body.userEname,
             user_name: req.body.user_name,
             user_deb: req.body.user_deb,
@@ -171,13 +171,25 @@ router.delete('/delete/:id',isAuthenticated, (req,res)=> {
 })
 // save amount to db
 router.post('/sub',isAuthenticated, (req,res)=> {
+    var amtype
+    var left_deb_check = req.body.left_deb_check
+    var left_deb = req.body.left_deb
 
+    if(parseInt (left_deb_check) > parseInt (left_deb) ){
+        amtype="mines"
+    }
+    if(parseInt(left_deb) > parseInt (left_deb_check) ) {
+        console.log(left_deb.dataType)
+        console.log(left_deb_check.dataType)
+        amtype = "add"
+    }
 
         let new_deb = new User_deb({
             userEname: req.body.userEname,
             user_name: req.body.user_name,
             left_deb: req.body.left_deb,
             am_paid: req.body.am_paid,
+            am_type:amtype,
             note:req.body.note,
             created_at: Date.now()
         })
@@ -186,7 +198,7 @@ router.post('/sub',isAuthenticated, (req,res)=> {
             if(!err) {
                 console.log('deb was added')
                 req.flash('info', ' The event was created successfuly')
-                res.redirect('/events/home')
+
             } else {
                 console.log(err)
             }
@@ -200,7 +212,7 @@ router.post('/sub',isAuthenticated, (req,res)=> {
     User_E.updateOne(query, newfeilds, (err)=> {
         if(!err) {
             req.flash('info', " The event was updated successfuly"),
-                res.redirect('/events/home')
+                res.redirect('/events')
         } else {
             console.log(err)
         }

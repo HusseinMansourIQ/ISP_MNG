@@ -14,6 +14,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    am_type: {
+        type:String,
+        required: true
+    },
     note: {
         type: String,
         required: true

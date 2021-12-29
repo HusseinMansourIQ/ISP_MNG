@@ -26,13 +26,25 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.app.js">
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="sync.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/sync.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Shell Script.sync.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -54,6 +66,12 @@
       <workItem from="1638969747236" duration="3865000" />
       <workItem from="1639574866589" duration="1624000" />
       <workItem from="1639650744711" duration="1635000" />
+      <workItem from="1639679387851" duration="1515000" />
+      <workItem from="1640153518084" duration="3546000" />
+      <workItem from="1640166241234" duration="1813000" />
+      <workItem from="1640756430347" duration="1170000" />
+      <workItem from="1640770741995" duration="3207000" />
+      <workItem from="1640774367670" duration="5441000" />
     </task>
     <servers />
   </component>
@@ -69,22 +87,22 @@
       <screen x="0" y="0" width="1676" height="896" />
     </state>
     <state x="617" y="202" key="FileChooserDialogImpl/0.0.1676.896@0.0.1676.896" timestamp="1639650854600" />
-    <state width="1654" height="234" key="GridCell.Tab.0.bottom" timestamp="1639653830520">
+    <state width="1654" height="234" key="GridCell.Tab.0.bottom" timestamp="1640782901225">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
-    <state width="1654" height="234" key="GridCell.Tab.0.bottom/0.0.1676.896@0.0.1676.896" timestamp="1639653830520" />
-    <state width="1654" height="234" key="GridCell.Tab.0.center" timestamp="1639653830520">
+    <state width="1654" height="234" key="GridCell.Tab.0.bottom/0.0.1676.896@0.0.1676.896" timestamp="1640782901225" />
+    <state width="1654" height="234" key="GridCell.Tab.0.center" timestamp="1640782901225">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
-    <state width="1654" height="234" key="GridCell.Tab.0.center/0.0.1676.896@0.0.1676.896" timestamp="1639653830520" />
-    <state width="1654" height="234" key="GridCell.Tab.0.left" timestamp="1639653830520">
+    <state width="1654" height="234" key="GridCell.Tab.0.center/0.0.1676.896@0.0.1676.896" timestamp="1640782901225" />
+    <state width="1654" height="234" key="GridCell.Tab.0.left" timestamp="1640782901225">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
-    <state width="1654" height="234" key="GridCell.Tab.0.left/0.0.1676.896@0.0.1676.896" timestamp="1639653830520" />
-    <state width="1654" height="234" key="GridCell.Tab.0.right" timestamp="1639653830520">
+    <state width="1654" height="234" key="GridCell.Tab.0.left/0.0.1676.896@0.0.1676.896" timestamp="1640782901225" />
+    <state width="1654" height="234" key="GridCell.Tab.0.right" timestamp="1640782901225">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
-    <state width="1654" height="234" key="GridCell.Tab.0.right/0.0.1676.896@0.0.1676.896" timestamp="1639653830520" />
+    <state width="1654" height="234" key="GridCell.Tab.0.right/0.0.1676.896@0.0.1676.896" timestamp="1640782901225" />
     <state x="494" y="204" key="run.anything.popup" timestamp="1638702261237">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
