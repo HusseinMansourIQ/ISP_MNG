@@ -1,0 +1,32 @@
+<%- include('../partials/header.ejs') -%>
+<%- include('../partials/navbar.ejs') -%>
+<div class="container">
+    <div class="row mt-4">
+
+
+        <div class="col-md-9 offset-md-1">
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title"><%=user.userEname%></h5>
+                    <hr>
+                    <p class="card-text"><%=user.user_name%></p>
+                    <p class="card-text">القيمة المسددة او المضافة : <%=user.am_paid%></p>
+                    <p class="card-text">القيمة الباقية : <%=user.left_deb%></p>
+                    <p class="card-text"><%=user.am_type%></p>
+                    <p class="card-text"><%=user.mng%></p>
+                    <p><span class="badge badge-secondary"><%=user.created_at.toDateString()%></span></p>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<%- include('../partials/footer.ejs') -%>

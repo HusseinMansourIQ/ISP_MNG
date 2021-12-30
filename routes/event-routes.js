@@ -2,6 +2,7 @@ const express = require("express")
 const router = express.Router()
 const User_E = require('../models/User_E')
 const User_deb = require('../models/user_debs')
+const Mng = require('../models/Mng')
 const { check, validationResult } = require('express-validator/check')
 const moment = require('moment');
 moment().format();
@@ -178,7 +179,8 @@ router.post('/sub',isAuthenticated, (req,res)=> {
             am_paid: req.body.am_paid,
             am_type:amtype,
             note:req.body.note,
-            created_at: Date.now()
+            created_at: Date.now(),
+            mng:req.user.email
         })
 
     new_deb.save( (err)=> {
@@ -208,7 +210,6 @@ router.post('/sub',isAuthenticated, (req,res)=> {
 
 router.get('/user_debs',isAuthenticated, (req,res)=> {
     User_deb.find({}, (err,debs)=> {
-
         //res.json(chunk)
         res.render('event/am_paid_list', {
             debs : debs,
@@ -219,6 +220,24 @@ router.get('/user_debs',isAuthenticated, (req,res)=> {
 
 
 
+
+})
+//show single deb
+router.get('/showdeb/:id', isAuthenticated, (req,res)=> {
+    User_deb.findOne({_id: req.params.id}, (err,user)=> {
+
+
+        if(!err) {
+
+            res.render('event/deb_show', {
+                user: user,
+            })
+
+        } else {
+            console.log(err)
+        }
+
+    })
 
 })
 
