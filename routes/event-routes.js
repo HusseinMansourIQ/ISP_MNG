@@ -98,13 +98,12 @@ router.get('/show/:id', isAuthenticated, (req,res)=> {
 
 router.get('/edit/:id', isAuthenticated,(req,res)=> {
 
-    Event.findOne({_id: req.params.id}, (err,event)=> {
+    User_E.findOne({_id: req.params.id}, (err,user)=> {
         
         if(!err) {
        
          res.render('event/edit', {
-             event: event,
-             eventDate: moment(event.date).format('YYYY-MM-DD'),
+             user:user,
              errors: req.flash('errors'),
              message: req.flash('info')
          })
@@ -119,30 +118,18 @@ router.get('/edit/:id', isAuthenticated,(req,res)=> {
 
 // update the form
 
-router.post('/update',[
-    check('title').isLength({min: 5}).withMessage('Title should be more than 5 char'),
-    check('description').isLength({min: 5}).withMessage('Description should be more than 5 char'),
-    check('location').isLength({min: 3}).withMessage('Location should be more than 5 char'),
-    check('date').isLength({min: 5}).withMessage('Date should valid Date'),
-
-], isAuthenticated,(req,res)=> {
+router.post('/update', isAuthenticated,(req,res)=> {
     
-    const errors = validationResult(req)
-    if( !errors.isEmpty()) {
-       
-        req.flash('errors',errors.array())
-        res.redirect('/events/edit/' + req.body.id)
-    } else {
+
        // crete obj
        let newfeilds = {
-           title: req.body.title,
-           description: req.body.description,
-           location: req.body.location,
-           date: req.body.date
+           userEname: req.body.userEname,
+           user_name: req.body.user_name,
+           user_note: req.body.user_note
        }
        let query = {_id: req.body.id}
 
-       Event.updateOne(query, newfeilds, (err)=> {
+       User_E.updateOne(query, newfeilds, (err)=> {
            if(!err) {
                req.flash('info', " The event was updated successfuly"),
                res.redirect('/events/edit/' + req.body.id)
@@ -150,7 +137,7 @@ router.post('/update',[
                console.log(err)
            }
        })
-    }
+
    
 })
 

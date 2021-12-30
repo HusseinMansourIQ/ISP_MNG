@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="66b237b9-d1a7-4aa7-90e3-a0277ba6a6f3" name="Default Changelist" comment="" />
+    <list default="true" id="66b237b9-d1a7-4aa7-90e3-a0277ba6a6f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/event-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/event-routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/event/am_paid_list.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/event/am_paid_list.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/event/edit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/event/edit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/event/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/event/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/event/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/event/show.ejs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +39,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="21g8RSUSLXaGIi4KfvuHjkO6L2r" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,9 +50,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hospital web/code/hospital" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/event" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\programming\ISP_MNG\views\event" />
+    </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
@@ -72,37 +106,55 @@
       <workItem from="1640756430347" duration="1170000" />
       <workItem from="1640770741995" duration="3207000" />
       <workItem from="1640774367670" duration="5441000" />
+      <workItem from="1640797485684" duration="312000" />
+      <workItem from="1640841184481" duration="3398000" />
+      <workItem from="1640858169549" duration="3828000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="291" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638701210190">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
     <state x="291" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1676.896@0.0.1676.896" timestamp="1638701210190" />
+    <state x="603" y="249" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1640858908301">
+      <screen x="0" y="0" width="1676" height="896" />
+    </state>
+    <state x="603" y="249" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1676.896@0.0.1676.896" timestamp="1640858908301" />
     <state x="617" y="202" key="FileChooserDialogImpl" timestamp="1639650854600">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
     <state x="617" y="202" key="FileChooserDialogImpl/0.0.1676.896@0.0.1676.896" timestamp="1639650854600" />
-    <state width="1654" height="234" key="GridCell.Tab.0.bottom" timestamp="1640782901225">
+    <state width="1654" height="234" key="GridCell.Tab.0.bottom" timestamp="1640860879538">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
-    <state width="1654" height="234" key="GridCell.Tab.0.bottom/0.0.1676.896@0.0.1676.896" timestamp="1640782901225" />
-    <state width="1654" height="234" key="GridCell.Tab.0.center" timestamp="1640782901225">
+    <state width="1654" height="234" key="GridCell.Tab.0.bottom/0.0.1676.896@0.0.1676.896" timestamp="1640860879538" />
+    <state width="1654" height="234" key="GridCell.Tab.0.center" timestamp="1640860879538">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
-    <state width="1654" height="234" key="GridCell.Tab.0.center/0.0.1676.896@0.0.1676.896" timestamp="1640782901225" />
-    <state width="1654" height="234" key="GridCell.Tab.0.left" timestamp="1640782901225">
+    <state width="1654" height="234" key="GridCell.Tab.0.center/0.0.1676.896@0.0.1676.896" timestamp="1640860879538" />
+    <state width="1654" height="234" key="GridCell.Tab.0.left" timestamp="1640860879538">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
-    <state width="1654" height="234" key="GridCell.Tab.0.left/0.0.1676.896@0.0.1676.896" timestamp="1640782901225" />
-    <state width="1654" height="234" key="GridCell.Tab.0.right" timestamp="1640782901225">
+    <state width="1654" height="234" key="GridCell.Tab.0.left/0.0.1676.896@0.0.1676.896" timestamp="1640860879538" />
+    <state width="1654" height="234" key="GridCell.Tab.0.right" timestamp="1640860879538">
       <screen x="0" y="0" width="1676" height="896" />
     </state>
-    <state width="1654" height="234" key="GridCell.Tab.0.right/0.0.1676.896@0.0.1676.896" timestamp="1640782901225" />
+    <state width="1654" height="234" key="GridCell.Tab.0.right/0.0.1676.896@0.0.1676.896" timestamp="1640860879538" />
     <state x="494" y="204" key="run.anything.popup" timestamp="1638702261237">
       <screen x="0" y="0" width="1676" height="896" />
     </state>

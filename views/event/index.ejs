@@ -1,5 +1,8 @@
 <%- include('../partials/header') -%>
 <%- include('../partials/navbar') -%>
+<script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
 <div class="container">
   
     <div class="row mt-3">
@@ -9,10 +12,12 @@
     
     </div>
 
+    <input class="form-control" id="gfg" type="text"
+           placeholder="Search here">
 
     <table class="table mydatatable table-hover " style="margin-top: 20px;">
 
-        <tbody>
+        <tbody id="geeks">
         <tr>
             <td class="">NO</td>
             <td>USER_NAME</td>
@@ -31,8 +36,8 @@
             <td><%=users.user_name%></td>
             <td><%=users.user_deb%></td>
             <td><%=users.user_note%></td>
-            <td><button class="btn btn-primary" style="padding: 0 0 0 0 !important
-      ;margin: -2.5px auto -2px auto !important;">Edit</button></td>
+            <td> <a href="<%= '/events/edit/' + users.id %>"><button class="btn btn-primary" style="padding: 0 0 0 0 !important
+      ;margin: -2.5px auto -2px auto !important;"  >Edit</button></a> </td>
             <td><button class="btn btn-danger"  style="padding: 0 0 0 0 !important
      ;margin: -2.5px auto -2px auto !important;">Delete</button></td>
 
@@ -42,7 +47,17 @@
 
         </tbody>
     </table>
-
+    <script>
+        $(document).ready(function() {
+            $("#gfg").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#geeks tr").filter(function() {
+                    $(this).toggle($(this).text()
+                        .toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
 
     <div class="row">
   <div class="col-12 mt-2 mb-4">

@@ -17,10 +17,11 @@
             <td class="">NO</td>
             <td>USER_NAME</td>
             <td>USER DISPLAY NAME</td>
-            <td>DEB AFTER PAID</td>
-            <td>PAID AMOUNT</td>
+            <td>EDIT TYPE</td>
+            <td>DEB AFTER EDIT</td>
+            <td>AMOUNT</td>
             <td>USER NOTE</td>
-            <td>EDIT</td>
+
         </tr>
         <% debs.forEach((debs)=> {%>
 
@@ -29,11 +30,10 @@
 
                 <td> <a href="<%=  '/events/show/'  + debs.id %>" style="text-decoration: unset;color: black;"><%=debs.userEname%></a></td>
                 <td><%=debs.user_name%></td>
+                <td><%=debs.am_type%></td>
                 <td><%=debs.left_deb%></td>
                 <td><%=debs.am_paid%></td>
                 <td><%=debs.note%></td>
-                <td><button class="btn" style="padding: 0 0 0 0 !important
-      ;margin: -2.5px auto -2px auto !important;">Edit</button></td>
                 <td><button class="btn"  style="padding: 0 0 0 0 !important
      ;margin: -2.5px auto -2px auto !important;"><i class="fas fa-times-circle" style="font-size: 20px;color: red;margin-top: 2px;"></i></button></td>
 

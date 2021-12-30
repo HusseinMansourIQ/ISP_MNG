@@ -18,13 +18,27 @@
 
                 <input type="text" class="form-control" value="<%=user.user_deb%>" name="left_deb_check" id="left_deb_check" style="display: none"></input>
                 <hr>
-                <input type="text" class="form-control" placeholder="القيمة المسددة" name="am_paid" id="am_paid"></input>
+                <input type="text" class="form-control" placeholder="القيمة المسددةاو المظافة" name="am_paid" id="am_paid"></input>
                 <hr>
-                <input type="text" class="form-control" placeholder="ملاحضات التسديد" name="note" id="note"></input>
-                <p  class="form-control" placeholder="ملاحضات التسديد" name="am_type" id="am_type" style="display: none"></p>
+                <input type="text" class="form-control" placeholder="NOTE " name="note" id="note"></input>
+                <p  class="form-control" placeholder="NOTE " name="am_type" id="am_type" style="display: none"></p>
 
                 <hr>
-                    <a href="#" class="btn btn-secondary">Edit</a>
+                <h5 style="font-size:14px;
+margin-bottom: -30px
+;display:inline;
+margin-top: 30px;
+color: rgba(86,85,85,1);">
+                    <i style="color: rgba(3,89,197,1);
+padding-right: 5px;font-size: 15.5px;
+" class="fas fa-calendar-alt"></i> created date:</h5>
+                <!-- start the date of joined time -->
+                <h5  style="padding-left: 12px;font-size:14px;
+display: inline;
+color: rgba(86,85,85,1);"> <%=user.created_at%></h5>
+                <hr>
+
+                <a href="#" class="btn btn-secondary">Edit</a>
                 <input type="text" class="form-control" value="<%=user._id%>" id="user_id" name="user_id" style="display: none"></input>
 
                 <button  type="submit"  class="btn btn-primary"id="submit">submit</button>
