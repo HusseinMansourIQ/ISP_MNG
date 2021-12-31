@@ -1,15 +1,17 @@
-# Events Project using nodejs/MongoDB
+# ISP AGENT DEBS MANEGMANT  nodejs/MongoDB
 
-This project to show the steps in my youtube course :
+contact with us 
 
-* [Node.js-MongoDB](https://www.youtube.com/playlist?list=PLXgJ7cArk9uR_xxd3iZIwTg0mKUDYsxoi) 
-
+* [Hussein Dhafer (woner)](https://www.facebook.com/profile.php?id=100017377890778) 
+* [Epassion team⚕](https://www.instagram.com/team_epassion/) 
 
 ### Installing
 
 Once you have cloned or downloaded this repo you need to make sure you have Mongo DB installed then
 
 run the following command to bring all npm packages required for this project
+
+if u have any problems or want to work with us contect us 
 
 ```
 npm install 
