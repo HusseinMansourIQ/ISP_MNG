@@ -84,4 +84,18 @@ router.get('/logout', (req,res)=> {
     res.redirect('/users/login');
 })
 
+//get create user
+router.get('/create', (req,res)=> {
+    res.render('user/create_user', {
+        error: req.flash('error')
+    })
+})
+
+//post create user
+router.post('/create',
+    passport.authenticate('local.signup', {
+        successRedirect: '/users/profile',
+        failureRedirect: '/users/signup',
+        failureFlash: true })
+)
 module.exports = router

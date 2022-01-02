@@ -1,39 +1,42 @@
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/events">AMC Groups</a>
+    <nav class="navbar navbar-expand-lg " style="background-color:#194769">
+        <a class="navbar-brand" href="/events" style="color: honeydew">AMC Groups</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/events">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/events" style="color: honeydew">Home <span class="sr-only">(current)</span></a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="/events/user_debs">debs list</a>
+              <a class="nav-link" href="/events/user_debs"style="color: honeydew">debs list</a>
             </li>
               <li class="nav-item">
-                  <a class="nav-link" href="/events/create">Add Newe User</a>
+                  <a class="nav-link" href="/events/create"style="color: honeydew">Add Newe User</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="/hv/mario">Have Fun</a>
+                  <a class="nav-link" href="/hv/mario"style="color: honeydew">Have Fun</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/users/create"style="color: honeydew">Add Admin User</a>
               </li>
           </ul>
           <ul class="navbar-nav ml-auto">
 
             <% if (!user) { %>
               <li class="nav-item active">
-                <a class="nav-link" href="/users/login"> Login</a>
+                <a class="nav-link" href="/users/login"style="color: honeydew"> Login</a>
               </li>
 
               <li class="nav-item active">
-                  <a class="nav-link" href="/users/signup"> Signup</a>
+                  <a class="nav-link" href="/users/signup"style="color: honeydew"> Signup</a>
                 </li>
 
               <% } else { %>
               <li class="nav-item active">
-                <a class="nav-link" href="/users/logout"> logout</a>
+                <a class="nav-link" href="/users/logout"style="color: honeydew"> logout</a>
               </li>
               <%}  %>
        

@@ -164,12 +164,12 @@ router.post('/sub',isAuthenticated, (req,res)=> {
     var left_deb = req.body.left_deb
 
     if(parseInt (left_deb_check) > parseInt (left_deb) ){
-        amtype="mines"
+        amtype="تسديد"
     }
     if(parseInt(left_deb) > parseInt (left_deb_check) ) {
         console.log(left_deb.dataType)
         console.log(left_deb_check.dataType)
-        amtype = "add"
+        amtype = "اضافة"
     }
 
         let new_deb = new User_deb({
