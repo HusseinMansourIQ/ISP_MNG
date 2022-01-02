@@ -38,10 +38,9 @@ display: inline;
 color: rgba(86,85,85,1);"> <%=user.created_at%></h5>
                 <hr>
 
-                <a href="#" class="btn btn-secondary">Edit</a>
+                <a href="<%= '/events/edit/' + user.id %>" class="btn btn-secondary">Edit</a>
                 <input type="text" class="form-control" value="<%=user._id%>" id="user_id" name="user_id" style="display: none"></input>
-
-                <button  type="submit"  class="btn btn-primary"id="submit">submit</button>
+                <button  type="submit"  class="btn btn-primary"id="submit">Submit</button>
 
 
 

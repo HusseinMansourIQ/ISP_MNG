@@ -38,7 +38,7 @@
             <td><%=users.user_note%></td>
             <td> <a href="<%= '/events/edit/' + users.id %>"><button class="btn btn-primary" style="padding: 0 0 0 0 !important
       ;margin: -2.5px auto -2px auto !important;"  >Edit</button></a> </td>
-            <td><button class="btn btn-danger"  style="padding: 0 0 0 0 !important
+            <td><button class="btn btn-danger" onclick="deleteEvent()" id="deleteBtn" data-id="<%= users.id%>" style="padding: 0 0 0 0 !important
      ;margin: -2.5px auto -2px auto !important;">Delete</button></td>
 
 

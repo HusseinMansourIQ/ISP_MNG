@@ -148,7 +148,7 @@ router.delete('/delete/:id',isAuthenticated, (req,res)=> {
 
     let query = {_id: req.params.id}
 
-    Event.deleteOne(query, (err)=> {
+    User_E.deleteOne(query, (err)=> {
 
         if(!err) {
             res.status(200).json('deleted')

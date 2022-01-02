@@ -50,6 +50,9 @@ app.use('/events', events)
 // bring user routes
 const users = require('./routes/user-routes')
 app.use('/users', users)
+// have fun games route
+const hv = require('./routes/hv-routes')
+app.use('/hv', hv)
 // listen to port 3000
 
 app.listen(3000, ()=> {
