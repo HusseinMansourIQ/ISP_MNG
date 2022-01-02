@@ -1,12 +1,12 @@
 {
-  "name": "node_events",
+  "name": "ISP_MNG",
   "version": "1.0.0",
   "description": "to show full project using nodejs and mongodb",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "abdulaziz alzaabi",
+  "author": "Hussein Dhafer",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
