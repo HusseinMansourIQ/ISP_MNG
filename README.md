@@ -2,7 +2,7 @@
 
 contact with me
 
-* [Hussein Dhafer (owner)](https://www.facebook.com/profile.php?id=100017377890778) 
+* [Hussein Dhafer ](https://www.facebook.com/profile.php?id=100017377890778) 
 
 ### Installing
 
@@ -13,6 +13,6 @@ run the following command to bring all npm packages required for this project
 npm install 
 ```
 
-if you have any problems or want to work with us ,pkeas contect us 
+if you have any problems or want to work with us pleas contect me 
 
 
