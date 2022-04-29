@@ -1,9 +1,8 @@
 # ISP AGENT DEBS MANEGMANT  nodejs/MongoDB
 
-contact with us 
+contact with me
 
 * [Hussein Dhafer (owner)](https://www.facebook.com/profile.php?id=100017377890778) 
-* [Epassion team⚕](https://www.instagram.com/team_epassion/) 
 
 ### Installing
 
